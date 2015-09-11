@@ -37,8 +37,25 @@
         </auth-constraint>
     </security-constraint>
     -->
-
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
+  <servlet>
+    <servlet-name>JavaServlet</servlet-name>
+    <servlet-class>se.ce.JavaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaServlet</servlet-name>
+    <url-pattern>/java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ScalaServlet</servlet-name>
+    <servlet-class>se.ce.ScalaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScalaServlet</servlet-name>
+    <url-pattern>/scala</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>
