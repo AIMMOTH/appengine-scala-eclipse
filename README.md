@@ -12,6 +12,10 @@ A template project with Scala and Unfiltered on Google App Engine.
   * Scalate precompiling support with [xsbt-scalate-generate](https://github.com/backchatio/xsbt-scalate-generate)
   * App Engine support with [sbt-appengine](https://github.com/sbt/sbt-appengine)
 
+Install
+-------
+
+1) Download and set path to appengine sdk
 
 Prepare
 -------
@@ -71,6 +75,17 @@ sbt eclipse
 ```
 
 2) Import Eclipse project in Eclipse
+
+3) Add Google App Engine to project
+
+3.1) Quick fix output folder to WEB-INF/classes
+3.2) Quick fix copy jersey jars to WEB-INF/lib
+3.3) Ignore any JPA persistence.xml error
+3.4) Delete jar files appengine-stubs and appengine-testing from WEB-INF/lib
+
+4) Use JDK for compilation
+
+5) You may only upload if compiled with Java 7
 
 Structure
 ---------
