@@ -53,7 +53,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>jersey_web_application</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

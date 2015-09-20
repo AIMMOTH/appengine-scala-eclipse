@@ -2,6 +2,8 @@ name := "sbt-appengine"
 
 version := "1.0"
 
+// Use 2.10.X since GAE runs in Java 7
+
 scalaVersion := "2.10.5"
 
 libraryDependencies ++= Seq(
