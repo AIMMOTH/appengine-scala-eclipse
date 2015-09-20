@@ -5,3 +5,5 @@ appengineSettings
 webappResources in Compile := Seq(
   baseDirectory.value / "src/main/webapp"
 )
+
+// override def webappClasspath = super.webappClasspath +++ buildLibraryJar 
